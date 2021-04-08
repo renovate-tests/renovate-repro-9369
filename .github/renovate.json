@@ -1,8 +1,4 @@
 {
-  "hostRules": [{
-    "abortOnError": true,
-    "abortIgnoreStatusCodes": [404]
-  }],
   "automerge": false,
   "branchPrefix": "renovate/",
   "extends": [
@@ -34,6 +30,10 @@
   "separateMinorPatch": true,
   "separateMultipleMajor": true,
   "unpublishSafe": true,
-  "updateNotScheduled": true
+  "updateNotScheduled": true,
+  "hostRules": [{
+    "abortOnError": true,
+    "abortIgnoreStatusCodes": [404]
+  }]
 }
 
