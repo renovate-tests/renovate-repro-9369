@@ -3,6 +3,6 @@
     "managers": ["poetry"],
     "versioning": "poetry"
   }],
-  "rollbackPrs": false
+  "rollbackPrs": true
 }
 
