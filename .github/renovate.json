@@ -14,43 +14,8 @@
     "enabled": true
   },
   "packageRules": [{
-    "datasources": ["docker"],
-    "packageNames": ["python"],
-    "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<prerelease>[^.-]+)?(-(?<compatibility>.*))?$"
-  }, {
-    "managers": ["pre-commit"],
-    "packageNames": ["pycqa/pylint"],
-    "versioning": "regex:^pylint-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
-  }, {
-    "managers": ["pre-commit"],
-    "packageNames": ["pre-commit/mirrors-mypy"],
-    "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d)\\.?(?<patch>\\d+)$"
-  }, {
-    "datasources": ["orb"],
-    "rangeStrategy": "replace",
-    "patch": {
-      "enabled": false
-    }
-  }, {
-    "packagePatterns": ["^com.google.auto.value"],
-    "managers": ["maven"],
-    "groupName": "com.google.auto.value packages"
-  }, {
-    "datasources": ["pypi"],
-    "packagePatterns": ["^grpcio"],
-    "groupName": "grpcio"
-  }, {
-    "datasources": ["pypi"],
-    "packageNames": ["hypothesis", "pytest", "pytest-asyncio", "pytest-cases", "pytest-cov", "pytest-datadir", "pytest-mock"],
-    "updateTypes": ["minor", "patch", "pin", "digest"],
-    "automerge": true
-  }, {
     "managers": ["poetry"],
     "versioning": "poetry"
-  }, {
-    "datasources": ["terraform"],
-    "packageNames": ["google", "google-beta"],
-    "groupName": "google"
   }, {
     "packageNames": ["poetry"],
     "rangeStrategy": "widen"
@@ -61,7 +26,6 @@
   "prConcurrentLimit": 0,
   "prCreation": "immediate",
   "prHourlyLimit": 0,
-  "pruneStaleBranches": true,
   "rangeStrategy": "pin",
   "rollbackPrs": true,
   "semanticCommits": true,
