@@ -1,11 +1,4 @@
 {
-  "packageRules": [{
-    "packageNames": ["poetry"],
-    "rangeStrategy": "widen"
-  }, {
-    "packageNames": ["python"],
-    "allowedVersions": "< 3.8.0"
-  }],
   "hostRules": [{
     "abortOnError": true,
     "abortIgnoreStatusCodes": [404]
@@ -58,6 +51,12 @@
     "datasources": ["terraform"],
     "packageNames": ["google", "google-beta"],
     "groupName": "google"
+  }, {
+    "packageNames": ["poetry"],
+    "rangeStrategy": "widen"
+  }, {
+    "packageNames": ["python"],
+    "allowedVersions": "< 3.8.0"
   }],
   "prConcurrentLimit": 0,
   "prCreation": "immediate",
