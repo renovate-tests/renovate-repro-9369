@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "repro"
+version = "0.0.0"
+description = ""
+
+repository = "https://github.com/TheKevJames/renovate-repro-9369"
+authors = ["me"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+blinker = "1.4"  # enables flask signals support: https://flask.palletsprojects.com/en/1.1.x/signals/
+flask = "1.1.2"
+multidict = "4.7.6"
+yarl = "1.5.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
