@@ -1,11 +1,8 @@
 {
-  "ignoreUnstable": true,
   "packageRules": [{
     "managers": ["poetry"],
     "versioning": "poetry"
   }],
-  "rangeStrategy": "pin",
-  "rollbackPrs": true,
-  "updateNotScheduled": true
+  "rollbackPrs": true
 }
 
