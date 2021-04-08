@@ -1,39 +1,11 @@
 {
-  "automerge": false,
-  "branchPrefix": "renovate/",
-  "extends": [
-    "group:monorepos",
-    "group:recommended"
-  ],
   "ignoreUnstable": true,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
   "packageRules": [{
     "managers": ["poetry"],
     "versioning": "poetry"
-  }, {
-    "packageNames": ["poetry"],
-    "rangeStrategy": "widen"
-  }, {
-    "packageNames": ["python"],
-    "allowedVersions": "< 3.8.0"
   }],
-  "prConcurrentLimit": 0,
-  "prCreation": "immediate",
-  "prHourlyLimit": 0,
   "rangeStrategy": "pin",
   "rollbackPrs": true,
-  "semanticCommits": true,
-  "semanticCommitType": "chore",
-  "separateMajorMinor": true,
-  "separateMinorPatch": true,
-  "separateMultipleMajor": true,
-  "unpublishSafe": true,
-  "updateNotScheduled": true,
-  "hostRules": [{
-    "abortOnError": true,
-    "abortIgnoreStatusCodes": [404]
-  }]
+  "updateNotScheduled": true
 }
 
