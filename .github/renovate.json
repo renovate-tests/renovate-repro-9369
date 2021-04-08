@@ -1,8 +1,4 @@
 {
-  "packageRules": [{
-    "managers": ["poetry"],
-    "versioning": "poetry"
-  }],
   "rollbackPrs": true
 }
 
